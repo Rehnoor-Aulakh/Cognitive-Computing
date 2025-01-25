@@ -1,0 +1,21 @@
+import pandas as pd
+
+dataset={
+    'Tid':[1,2,3,4,5,6,7,8,9,10],
+    'Refund':['Yes','No','No','Yes','No','No','Yes','No','No','No'],
+    'Marital_Status':['Single','Married','Single','Married','Divorced','Married','Divorced','Single','Married','Single'],
+    'Taxable_Income':['125K','100K','70K','120K','96K','60K','220K','85K','75K','90K'],
+    'Cheat':['No','No','No','No','Yes','No','No','Yes','No','Yes']
+}
+
+#Q1
+df=pd.DataFrame(dataset)
+print(df)
+
+#Q2
+print(df.loc[0],df.loc[4],df.loc[7],df.loc[8])
+
+#Q3
+print(df.loc[3:7])
+print(df.iloc[4:9,2:5])
+print(df.iloc[:,1:4])
